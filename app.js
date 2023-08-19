@@ -16,7 +16,7 @@ app.set('trust proxy', 1)
 /*********************************************************/
 
 // static folder
-app.use(express.static("public"))
+app.use('/',express.static("public"))
 
 // Routes
 app.use('/api', require('./routes/index'))
